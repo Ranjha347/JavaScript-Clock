@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: url(images/bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clock-body{
+    width: 300px;
+    height: 300px;
+    border: 1em solid #fff;
+    border-radius: 50%;
+    margin: 13% auto;
+    position: relative;
+}
+.center-mark{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 50%;
+    left: 48%;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 9;
+}
+img.clock-img {
+    position: absolute;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    left: -15%;
+}
+.hour {
+    background: white;
+    width: 60px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50.5%;
+    left: 48.4%;
+    transform: rotate(270deg);
+    transform-origin: 6%;
+}
+.minute {
+    background: #000;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50.5%;
+    left: 48%;
+    transform: rotate(270deg);
+    transform-origin: 6%;
+    z-index: -1;
+}
+.second {
+    background: #ff0000;
+    width: 90px;
+    height: 2px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50.5%;
+    left: 48%;
+    transform: rotate(270deg);
+    transform-origin: 6%;
+    z-index: -9;
+}
